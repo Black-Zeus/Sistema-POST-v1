@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateTiposmovimientosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,18 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+        Schema::create('tiposmovimientos', function (Blueprint $table) {
+            $table->id()->comment("Correlativo");
+            $table->string('Descripcion')->comment("Descripcion del Registro");
+            $table->unsignedBigInteger('idEstado')->default(1)->comment("Id Estados");            
 
             //Habilitacion de Fecha Creacion / Eliminacion
             $table->timestamps();
 
             //Habilitacion de SoftDelete
             $table->softDeletes();
+            
+            $table->foreign('idEstado', 'TiposMovimientos_FK')->references('id')->on('estados');
         });
     }
 
@@ -36,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('tiposmovimientos');
     }
-};
+}
