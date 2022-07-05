@@ -16,8 +16,7 @@ class CreateEstadosTable extends Migration
         Schema::create('estados', function (Blueprint $table) {
             $table->id()->comment("Correlativo");
             $table->string('Descripcion')->comment("Descripcion del Registro");
-            $table->string('Modulo', 50)->comment("Nombre del modulo que empleara el permiso");
-            
+            $table->string('Modulo', 50)->comment("Nombre del modulo que empleara el permiso");            
 
             //Habilitacion de Fecha Creacion / Eliminacion
             $table->timestamps();
