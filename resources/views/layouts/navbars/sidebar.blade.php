@@ -7,45 +7,121 @@
   -->
   <div class="logo">
     <a href="#" class="simple-text logo-normal">
-      {{ __('Creative Tim') }}
+      <img src="{{ asset('img') }}/logo.png"" class="LogoImage" />
+      {{ env('APP_NAME') }}
     </a>
   </div>
   <div class="sidebar-wrapper">
-    <ul class="nav">
+    <ul class="nav SideBar">
       <li class="nav-item{{ $activePage == 'dashboard' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('home') }}">
           <i class="material-icons">dashboard</i>
           <p>{{ __('Dashboard') }}</p>
         </a>
       </li>
-      <li
-        class="nav-item {{ $activePage == 'profile' || $activePage == 'user-management' ? ' active' : '' }}">
-        <a class="nav-link" data-toggle="collapse" href="#laravelExample"
-          aria-expanded="true">
-          <i><img style="width:25px"
-              src="{{ asset('material') }}/img/laravel.svg"></i>
-          <p>{{ __('Laravel Examples') }}
-            <b class="caret"></b>
-          </p>
-        </a>
-        <div class="collapse show" id="laravelExample">
-          <ul class="nav">
-            <li
-              class="nav-item{{ $activePage == 'profile' ? ' active' : '' }}">
-              <a class="nav-link" href="{{ route('profile.edit') }}">
-                <span class="sidebar-mini"> UP </span>
-                <span class="sidebar-normal">{{ __('User profile') }} </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
+
+
       <li class="nav-item{{ $activePage == 'table' ? ' active' : '' }}">
         <a class="nav-link" href="{{ route('table') }}">
           <i class="material-icons">content_paste</i>
           <p>{{ __('Table List') }}</p>
         </a>
       </li>
+      <!-- Secciones del Aplicativo  -->
+
+      <!-- Ventas  -->
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#ManagerVentas"
+          aria-expanded="false">
+          <i class="material-icons">receipt</i>
+          <p>
+            Ventas<b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse dropdown-menu-open" id="ManagerVentas">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">trending_down</i>&nbsp&nbsp
+                Mis Ventas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">loyalty</i>&nbsp&nbsp
+                Generar Venta
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">point_of_sale</i>&nbsp&nbsp
+                Pagar Venta
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">multiple_stop</i>&nbsp&nbsp
+                Cambio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">settings_backup_restore</i>&nbsp&nbsp
+                Devolucion
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Caja  -->
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#ManagerCaja"
+          aria-expanded="false">
+          <i class="material-icons">attach_money</i>
+          <p>
+            Caja<b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse dropdown-menu-open" id="ManagerCaja">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">monetization_on</i>&nbsp&nbsp
+                Caja Chica
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">local_atm</i>&nbsp&nbsp
+                Caja
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Productos  -->
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#ManagerProducts"
+          aria-expanded="false">
+          <i class="material-icons">bento</i>
+          <p>
+            Productos<b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse dropdown-menu-open" id="ManagerProducts">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="material-icons">screen_search_desktop</i>&nbsp&nbsp
+                Consultar
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
     </ul>
   </div>
 </div>
