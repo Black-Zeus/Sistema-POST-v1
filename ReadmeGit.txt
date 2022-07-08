@@ -26,7 +26,7 @@ git push -u origin Permisos
 
 //Merge
 # Start a new feature
-git checkout -b new-feature main
+git checkout -b Permisos main
 
 # Edit some files
 git add <file>
@@ -38,7 +38,7 @@ git commit -m "Start a feature"
 git add <file>
 git commit -m "Finish a feature"
 
-# Merge in the new-feature branch
+# Merge in the Permisos branch
 git checkout main
-git merge new-feature
-git branch -d new-feature
+git merge Permisos
+git branch -d Permisos
