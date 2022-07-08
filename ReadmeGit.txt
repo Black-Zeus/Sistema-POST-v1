@@ -11,7 +11,7 @@ git config --global user.name "Nombre usuario"
 git config --global user.email user@mail.com
 
 //Configuracion del editor
-git config --global core.autocrlf true
+git config --global core.autocrlf false
 git config --global core.editor code
 
 //Crear Branch (Rama)
@@ -31,6 +31,8 @@ git checkout -b new-feature main
 # Edit some files
 git add <file>
 git commit -m "Start a feature"
+
+
 
 # Edit some files
 git add <file>
