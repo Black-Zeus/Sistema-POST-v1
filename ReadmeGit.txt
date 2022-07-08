@@ -33,11 +33,7 @@ git checkout -b Menu_Create main
 git add <file>
 git commit -m "Start a feature"
 
-<<<<<<< HEAD
-=======
-
 //Subir cambios al servidor
->>>>>>> Menu_Create
 git push -u origin Menu_Create
 
 # Edit some files
