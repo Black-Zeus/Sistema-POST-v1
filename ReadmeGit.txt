@@ -15,13 +15,13 @@ git config --global core.autocrlf false
 git config --global core.editor code
 
 //Crear Branch (Rama)
-git checkout -b Dev
+git checkout -b Permisos
 
 //Crear Commit
 git commit -m "Mensaje Commit"
 
 //Subir cambios al servidor
-git push -u origin Dev
+git push -u origin Permisos
 
 
 //Merge
