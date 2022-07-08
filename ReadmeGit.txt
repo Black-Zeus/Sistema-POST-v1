@@ -13,6 +13,7 @@ git config --global user.email user@mail.com
 //Configuracion del editor
 git config --global core.autocrlf false
 git config --global core.editor code
+#git config --global core.editor "code --wait"
 
 //Crear Branch (Rama)
 git checkout -b Menu_Create
@@ -32,6 +33,11 @@ git checkout -b Menu_Create main
 git add <file>
 git commit -m "Start a feature"
 
+<<<<<<< HEAD
+=======
+
+//Subir cambios al servidor
+>>>>>>> Menu_Create
 git push -u origin Menu_Create
 
 # Edit some files

@@ -1,0 +1,23 @@
+img.LogoImage {
+    width: 4rem;
+}
+
+label.SectionName {
+    width: 90%;
+    color: white;
+    margin-left: 5%;
+    padding: 5px 5px 5px;
+    background-color: darkgray;
+}
+
+.NavBar > ul.nav>li>a.nav-link {
+    background: gray;
+}
+
+ul.nav>li>a.nav-link:hover {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    background: lightgray;
+
+    color: black;
+}
