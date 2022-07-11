@@ -44,3 +44,4 @@ Route::resource('tipodocumentos', App\Http\Controllers\TipodocumentoController::
 Route::resource('tipomovimientos', App\Http\Controllers\TipoMovimientoController::class)->middleware('auth');
 Route::resource('tipocajaschicas', App\Http\Controllers\TipocajaschicaController::class)->middleware('auth');
 Route::resource('tipolistaprecios', App\Http\Controllers\TipolistaprecioController::class)->middleware('auth');
+Route::resource('tipolocales', App\Http\Controllers\TipolocaleController::class)->middleware('auth');

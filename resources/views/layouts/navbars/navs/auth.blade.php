@@ -25,6 +25,20 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right"
             aria-labelledby="navbarDropdownProfile">
+            <label class="SectionName">Empresa</label>
+            <a class="dropdown-item" href="#">
+              <i class="material-icons">cached</i>&nbsp&nbsp
+              Empresas
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="material-icons">cached</i>&nbsp&nbsp
+              Locales / Bodegas
+            </a>
+            <a class="dropdown-item" href="{{ route('tipolocales.index') }}">
+              <i class="material-icons">cached</i>&nbsp&nbsp
+              Tipo Locales / Bodegas
+            </a>
+            <div class="dropdown-divider"> </div>
             <label class="SectionName">Caja Chica</label>
             <a class="dropdown-item" href="{{ route('tipomovimientos.index') }}">
               <i class="material-icons">cached</i>&nbsp&nbsp
