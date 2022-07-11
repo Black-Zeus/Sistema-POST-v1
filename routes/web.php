@@ -46,3 +46,4 @@ Route::resource('tipomovimientoscajas', App\Http\Controllers\Tipomovimientoscaja
 Route::resource('tipocajaschicas', App\Http\Controllers\TipocajaschicaController::class)->middleware('auth');
 Route::resource('tipolistaprecios', App\Http\Controllers\TipolistaprecioController::class)->middleware('auth');
 Route::resource('tipolocales', App\Http\Controllers\TipolocaleController::class)->middleware('auth');
+Route::resource('clientestipos', App\Http\Controllers\ClientestipoController::class)->middleware('auth');

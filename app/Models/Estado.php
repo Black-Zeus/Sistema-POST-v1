@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Cajaschicasdetalle[] $cajaschicasdetalles
  * @property Ciudade[] $ciudades
  * @property Cliente[] $clientes
- * @property Clientestipo[] $clientestipos
+ * @property Clientestipo[] $tipoclientes
  * @property Contactoscliente[] $contactosclientes
  * @property Contactosproveedore[] $contactosproveedores
  * @property Empresa[] $empresas
@@ -131,7 +131,7 @@ class Estado extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function clientestipos()
+    public function tipoclientes()
     {
         return $this->hasMany('App\Models\Clientestipo', 'idEstado', 'id');
     }

@@ -81,7 +81,7 @@
             aria-labelledby="navbarDropdownProfile">
             <label class="SectionName">Clientes</label>
 
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="{{ route('clientestipos.index') }}">
               <i class="material-icons">face</i>&nbsp&nbsp
               Tipo Cliente
             </a>
