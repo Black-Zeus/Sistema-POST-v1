@@ -40,4 +40,4 @@ Route::group(['middleware' => 'auth'], function () {
 //Parametros
 Route::resource('paises', App\Http\Controllers\PaiseController::class)->middleware('auth');
 Route::resource('ciudades', App\Http\Controllers\CiudadeController::class)->middleware('auth');
-Route::resource('tipo-documento', App\Http\Controllers\TipoDocumentoController::class)->middleware('auth');
+Route::resource('tipodocumentos', App\Http\Controllers\TipodocumentoController::class)->middleware('auth');

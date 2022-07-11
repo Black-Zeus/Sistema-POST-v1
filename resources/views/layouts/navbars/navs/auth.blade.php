@@ -40,7 +40,7 @@
               <i class="material-icons">location_city</i>&nbsp&nbsp
               Ciudades
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="{{ route('tipodocumentos.index') }}">
               <i class="material-icons">all_inbox</i>&nbsp&nbsp
               Tipo Documento
             </a>
