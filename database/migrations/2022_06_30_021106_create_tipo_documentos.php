@@ -27,7 +27,7 @@ return new class extends Migration
             //Habilitacion de SoftDelete
             $table->softDeletes();
             
-            $table->foreign('idEstado', 'TipoDocumentos_FK')->references('id')->on('estados');
+            $table->foreign('idEstado', 'tipodocumentos_FK')->references('id')->on('estados');
         });
     }
 

@@ -106,6 +106,10 @@ return [
     |
     */
 
-    'password_timeout' => 10800,
+    // timeount original 3 horas (MM * SS) * HH ( 60 * 60 ) * 3  == 3600 * 3 = 10800
+    // 'password_timeout' => 10800,
+
+    // timeount original 1 hora (MM * SS) * HH ( 60 * 60 ) * 1  == 3600 * 1= 3600
+    'password_timeout' => 3600,
 
 ];

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 img.LogoImage {
     width: 4rem;
 }
@@ -24,4 +21,7 @@ ul.nav>li>a.nav-link:hover {
 
     color: black;
 }
->>>>>>> Menu_Create
+
+li.nav-item{
+    text-align: center;
+}

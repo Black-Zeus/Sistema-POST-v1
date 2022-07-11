@@ -81,5 +81,25 @@
     "Welcome to Material Dashboard FREE Laravel Live Preview.": "Modulo de Acceso",
     "You have 5 new tasks": "Tienes 5 tareas nuevas",
     "You're now friend with Andrew": "Ahora eres amigo de Andrew.",
-    "Youre now friend with Andrew": "Ahora eres amigo de Andrew."
+    "Youre now friend with Andrew": "Ahora eres amigo de Andrew.",
+
+    "Users List":"Nomina de Usuarios",
+    "Create User":"Crear Usuario",
+    "Show User":"Ver Usuario",
+    "Edit User":"Editar Usuario",
+    "Delete User":"Eliminar Usuario",
+    "Back":"Regresar",
+
+    "Create New": "Crear Nuevo",
+    "Show": "Ver",
+    "Edit": "Editar",
+    "Delete": "Eliminar",
+
+    "Unable to delete current user":"No se puede eliminar el usuario actual",
+    "User deleted successfully":"Usuario eliminada exitosamente",
+    "User updated successfully":"Usuario actualizada con éxito",
+    "User created successfully.":"Usuario creada con éxito.",
+
+    "List of Countries": "Nómina de Países",
+    "List of Citys": "Nómina de Ciudades"
 }

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 
 Auth::routes();
@@ -27,7 +27,7 @@ Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('table-list', function () {
 		return view('pages.table_list');
-	})->name('table');	
+	})->name('table');
 });
 
 Route::group(['middleware' => 'auth'], function () {
@@ -35,3 +35,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
 });
+
+// Route::resource('users', App\Http\Controllers\UserController::class);
+//Parametros
+Route::resource('paises', App\Http\Controllers\PaiseController::class)->middleware('auth');
+Route::resource('ciudades', App\Http\Controllers\CiudadeController::class)->middleware('auth');
+Route::resource('tipo-documento', App\Http\Controllers\TipoDocumentoController::class)->middleware('auth');

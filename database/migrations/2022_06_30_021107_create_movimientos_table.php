@@ -40,7 +40,7 @@ class CreateMovimientosTable extends Migration
             $table->foreign('idTipoMovimientos', 'Movimientos_FK_1')->references('id')->on('tiposmovimientos');
             $table->foreign('idLocalOrigen', 'Movimientos_FK_2')->references('id')->on('locales');
             $table->foreign('idLocalDestino', 'Movimientos_FK_3')->references('id')->on('locales');
-            $table->foreign('idDocumentosTipo', 'Movimientos_FK_4')->references('id')->on('TipoDocumentos');
+            $table->foreign('idDocumentosTipo', 'Movimientos_FK_4')->references('id')->on('tipodocumentos');
             $table->foreign('idCliente', 'Movimientos_FK_5')->references('id')->on('clientes');
             $table->foreign('idContactos', 'Movimientos_FK_6')->references('id')->on('contactosclientes');
             $table->foreign('idEstado', 'Movimientos_FK_7')->references('id')->on('estados');

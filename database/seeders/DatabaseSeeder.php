@@ -18,6 +18,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call([ImpuestosSeeder::class]);
         $this->call([PaisesSeeder::class]);
-        $this->call([TipoDocumentosSeeder::class]);
+        $this->call(TipoDocumentosSeeder::class);
     }
 }

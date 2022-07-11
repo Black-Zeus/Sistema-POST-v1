@@ -32,11 +32,11 @@
             </a>
             <div class="dropdown-divider"> </div>
             <label class="SectionName">General</label>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="{{ route('paises.index') }}">
               <i class="material-icons">emoji_flags</i>&nbsp&nbsp
               Paises
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="{{ route('ciudades.index') }}">
               <i class="material-icons">location_city</i>&nbsp&nbsp
               Ciudades
             </a>
@@ -51,7 +51,8 @@
         <li class="nav-item dropdown">
           <a class="nav-link" href="#pablo" id="navbarDropdownProfile"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="material-icons">nature_people</i>Clientes / Proveedor &nbsp
+            <i class="material-icons">nature_people</i>Clientes / Proveedor
+            &nbsp
           </a>
 
           <div class="dropdown-menu dropdown-menu-right"
@@ -204,7 +205,8 @@
             aria-labelledby="navbarDropdownProfile">
             <label class="SectionName">Inventario</label>
             <a class="dropdown-item" href="#">
-              <i class="material-icons">production_quantity_limits</i>&nbsp&nbsp
+              <i
+                class="material-icons">production_quantity_limits</i>&nbsp&nbsp
               Producto
             </a>
             <a class="dropdown-item" href="#">
@@ -223,26 +225,13 @@
     </div>
 
     <div class="collapse navbar-collapse justify-content-end">
-      @if (1 == 2)
-        <form class="navbar-form">
-          <div class="input-group no-border">
-            <input type="text" value="" class="form-control"
-              placeholder="{{ __('Search...') }}">
-            <button type="submit"
-              class="btn btn-white btn-round btn-just-icon">
-              <i class="material-icons">search</i>
-              <div class="ripple-container"></div>
-            </button>
-          </div>
-        </form>
-      @endif
       <ul class="navbar-nav NavBar">
         <li class="nav-item dropdown">
           <a class="nav-link" href="#pablo" id="navbarDropdownProfile"
             data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            {{ Auth::user()->name }}&nbsp
             <i class="material-icons">supervised_user_circle</i>
+            {{ Auth::user()->name }}&nbsp
             <p class="d-lg-none d-md-block"> {{ __('Account') }} </p>
           </a>
           <div class="dropdown-menu dropdown-menu-right"

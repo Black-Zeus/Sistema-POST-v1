@@ -39,7 +39,7 @@ class CreateVentasTable extends Migration
             $table->foreign('idEmpresas', 'Ventas_FK')->references('id')->on('empresas');
             $table->foreign('idLocal', 'Ventas_FK_1')->references('id')->on('locales');
             $table->foreign('idMovimientos', 'Ventas_FK_2')->references('id')->on('movimientos');
-            $table->foreign('idDocumentosTipo', 'Ventas_FK_3')->references('id')->on('TipoDocumentos');
+            $table->foreign('idDocumentosTipo', 'Ventas_FK_3')->references('id')->on('tipodocumentos');
             $table->foreign('idCliente', 'Ventas_FK_4')->references('id')->on('clientes');
             $table->foreign('idContactos', 'Ventas_FK_5')->references('id')->on('contactosclientes');
             $table->foreign('idEstado', 'Ventas_FK_6')->references('id')->on('estados');
