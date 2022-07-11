@@ -42,6 +42,7 @@ Route::resource('paises', App\Http\Controllers\PaiseController::class)->middlewa
 Route::resource('ciudades', App\Http\Controllers\CiudadeController::class)->middleware('auth');
 Route::resource('tipodocumentos', App\Http\Controllers\TipodocumentoController::class)->middleware('auth');
 Route::resource('tipomovimientos', App\Http\Controllers\TipoMovimientoController::class)->middleware('auth');
+Route::resource('tipomovimientoscajas', App\Http\Controllers\TipomovimientoscajaController::class)->middleware('auth');
 Route::resource('tipocajaschicas', App\Http\Controllers\TipocajaschicaController::class)->middleware('auth');
 Route::resource('tipolistaprecios', App\Http\Controllers\TipolistaprecioController::class)->middleware('auth');
 Route::resource('tipolocales', App\Http\Controllers\TipolocaleController::class)->middleware('auth');

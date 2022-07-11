@@ -40,9 +40,9 @@
             </a>
             <div class="dropdown-divider"> </div>
             <label class="SectionName">Caja Chica</label>
-            <a class="dropdown-item" href="{{ route('tipomovimientos.index') }}">
+            <a class="dropdown-item" href="{{ route('tipomovimientoscajas.index') }}">
               <i class="material-icons">cached</i>&nbsp&nbsp
-              Tipo de Movimientos
+              Tipo de Movimientos Caja
             </a>
             <a class="dropdown-item" href="{{ route('tipocajaschicas.index') }}">
               <i class="material-icons">cached</i>&nbsp&nbsp
@@ -61,6 +61,10 @@
             <a class="dropdown-item" href="{{ route('tipodocumentos.index') }}">
               <i class="material-icons">all_inbox</i>&nbsp&nbsp
               Tipo Documento
+            </a>
+            <a class="dropdown-item" href="{{ route('tipomovimientos.index') }}">
+              <i class="material-icons">cached</i>&nbsp&nbsp
+              Tipo de Movimientos
             </a>
           </div>
         </li>
