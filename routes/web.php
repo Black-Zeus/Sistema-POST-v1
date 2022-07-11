@@ -43,3 +43,4 @@ Route::resource('ciudades', App\Http\Controllers\CiudadeController::class)->midd
 Route::resource('tipodocumentos', App\Http\Controllers\TipodocumentoController::class)->middleware('auth');
 Route::resource('tipomovimientos', App\Http\Controllers\TipoMovimientoController::class)->middleware('auth');
 Route::resource('tipocajaschicas', App\Http\Controllers\TipocajaschicaController::class)->middleware('auth');
+Route::resource('tipolistaprecios', App\Http\Controllers\TipolistaprecioController::class)->middleware('auth');

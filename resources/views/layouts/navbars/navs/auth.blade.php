@@ -134,7 +134,7 @@
               <i class="material-icons">attach_money</i>&nbsp&nbsp
               Vigentes
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="{{ route('tipolistaprecios.index') }}">
               <i class="material-icons">monitor</i>&nbsp&nbsp
               Administrar
             </a>
