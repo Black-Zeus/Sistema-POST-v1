@@ -30,6 +30,10 @@
               <i class="material-icons">cached</i>&nbsp&nbsp
               Tipo de Movimientos
             </a>
+            <a class="dropdown-item" href="{{ route('tipocajaschicas.index') }}">
+              <i class="material-icons">cached</i>&nbsp&nbsp
+              Tipo de Caja Chica
+            </a>
             <div class="dropdown-divider"> </div>
             <label class="SectionName">General</label>
             <a class="dropdown-item" href="{{ route('paises.index') }}">
