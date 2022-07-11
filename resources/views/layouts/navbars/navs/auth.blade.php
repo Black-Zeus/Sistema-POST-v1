@@ -26,7 +26,7 @@
           <div class="dropdown-menu dropdown-menu-right"
             aria-labelledby="navbarDropdownProfile">
             <label class="SectionName">Caja Chica</label>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="{{ route('tipomovimientos.index') }}">
               <i class="material-icons">cached</i>&nbsp&nbsp
               Tipo de Movimientos
             </a>

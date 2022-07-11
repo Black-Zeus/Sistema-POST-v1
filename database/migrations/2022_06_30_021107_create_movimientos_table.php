@@ -37,7 +37,7 @@ class CreateMovimientosTable extends Migration
             $table->softDeletes();
             
             $table->foreign('idEmpresas', 'Movimientos_FK')->references('id')->on('empresas');
-            $table->foreign('idTipoMovimientos', 'Movimientos_FK_1')->references('id')->on('tiposmovimientos');
+            $table->foreign('idTipoMovimientos', 'Movimientos_FK_1')->references('id')->on('tipomovimientos');
             $table->foreign('idLocalOrigen', 'Movimientos_FK_2')->references('id')->on('locales');
             $table->foreign('idLocalDestino', 'Movimientos_FK_3')->references('id')->on('locales');
             $table->foreign('idDocumentosTipo', 'Movimientos_FK_4')->references('id')->on('tipodocumentos');

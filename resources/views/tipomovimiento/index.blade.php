@@ -1,7 +1,7 @@
 @extends('layouts.app', ['activePage' => 'users', 'titlePage' => __('Users List')])
 
 @section('template_title')
-  Tipodocumento
+  Tipomovimiento
 @endsection
 
 @section('content')
@@ -25,35 +25,31 @@
                 <table class="table table-striped table-hover">
                   <thead class="thead">
                     <tr>
+                      <th>No</th>
 
-                      <th>Coddocumento</th>
                       <th>Descripcion</th>
-                      <th>Idestado</th>
-                      <th>Modulo</th>
-                      <th>Esdte</th>
+                      <th>Estado</th>
 
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($tipodocumentos as $tipodocumento)
+                    @foreach ($tipomovimientos as $tipomovimiento)
                       <tr>
+                        <td>{{ ++$i }}</td>
 
-                        <td>{{ $tipodocumento->codDocumento }}</td>
-                        <td>{{ $tipodocumento->Descripcion }}</td>
-                        <td>{{ $tipodocumento->estado->Descripcion }}</td>
-                        <td>{{ $tipodocumento->Modulo }}</td>
-                        <td>{{ $tipodocumento->EsDTE ? 'SI' : 'NO' }}</td>
+                        <td>{{ $tipomovimiento->Descripcion }}</td>
+                        <td>{{ $tipomovimiento->estado->Descripcion }}</td>
 
                         <td>
                           <form
-                            action="{{ route('tipodocumentos.destroy', $tipodocumento->id) }}"
+                            action="{{ route('tipomovimientos.destroy', $tipomovimiento->id) }}"
                             method="POST">
                             <a class="btn btn-sm btn-primary "
-                              href="{{ route('tipodocumentos.show', $tipodocumento->id) }}"><i
+                              href="{{ route('tipomovimientos.show', $tipomovimiento->id) }}"><i
                                 class="fa fa-fw fa-eye"></i> Show</a>
                             <a class="btn btn-sm btn-success"
-                              href="{{ route('tipodocumentos.edit', $tipodocumento->id) }}"><i
+                              href="{{ route('tipomovimientos.edit', $tipomovimiento->id) }}"><i
                                 class="fa fa-fw fa-edit"></i> Edit</a>
                             @csrf
                             @method('DELETE')
@@ -67,7 +63,7 @@
                   </tbody>
                 </table>
                 <div class="d-flex justify-content-end">
-                  {!! $tipodocumentos->links() !!}
+                  {!! $tipomovimientos->links() !!}
                 </div>
               </div>
             </div>

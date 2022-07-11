@@ -47,7 +47,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Tipolistaprecio[] $tipolistaprecios
  * @property Tipolocale[] $tipolocales
  * @property Tipomovimientoscaja[] $tipomovimientoscajas
- * @property Tiposmovimiento[] $tiposmovimientos
+ * @property Tiposmovimiento[] $tipomovimientos
  * @property Tiposproveedore[] $tiposproveedores
  * @property Venta[] $ventas
  * @package App
@@ -331,7 +331,7 @@ class Estado extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function tiposmovimientos()
+    public function tipomovimientos()
     {
         return $this->hasMany('App\Models\Tiposmovimiento', 'idEstado', 'id');
     }

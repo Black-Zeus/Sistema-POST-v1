@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTiposmovimientosTable extends Migration
+class CreatetipomovimientosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTiposmovimientosTable extends Migration
      */
     public function up()
     {
-        Schema::create('tiposmovimientos', function (Blueprint $table) {
+        Schema::create('tipomovimientos', function (Blueprint $table) {
             $table->id()->comment("Correlativo");
             $table->string('Descripcion')->comment("Descripcion del Registro");
             $table->unsignedBigInteger('idEstado')->default(1)->comment("Id Estados");            
@@ -24,7 +24,7 @@ class CreateTiposmovimientosTable extends Migration
             //Habilitacion de SoftDelete
             $table->softDeletes();
             
-            $table->foreign('idEstado', 'TiposMovimientos_FK')->references('id')->on('estados');
+            $table->foreign('idEstado', 'TipoMovimientos_FK')->references('id')->on('estados');
         });
     }
 
@@ -35,6 +35,6 @@ class CreateTiposmovimientosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tiposmovimientos');
+        Schema::dropIfExists('tipomovimientos');
     }
 }

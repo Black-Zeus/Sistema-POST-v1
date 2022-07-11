@@ -11,7 +11,7 @@ git config --global user.name "Nombre usuario"
 git config --global user.email user@mail.com
 
 //Configuracion del editor
-git config --global core.autocrlf false
+git config --global --replace-all core.autocrlf input
 git config --global core.editor code
 #git config --global core.editor "code --wait"
 
