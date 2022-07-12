@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['activePage' => 'users', 'titlePage' => __('Users List')]) 
 
 @section('template_title')
     {{ $roleHasPermission->name ?? 'Show Role Has Permission' }}
