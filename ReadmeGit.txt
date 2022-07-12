@@ -24,6 +24,8 @@ git commit -m "Mensaje Commit"
 //Subir cambios al servidor
 git push -u origin Mantenedores
 
+//Descargar cambios
+git pull
 
 //Merge
 # Start a new feature
